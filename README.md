@@ -33,10 +33,6 @@ node app.js
 
 Clients connect to `http://your-server:1138` and are matched automatically. Bots fill the room until a second real player joins.
 
-## Demo
-
-![Multiplayer](./gameplay.gif)
-
 ## Notes
 
 Initial 'Stick Arena Reborn' project by WuggyRS
