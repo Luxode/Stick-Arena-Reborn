@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spritesheet Origin Editor</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { display: flex; flex-direction: column; height: 100vh; background: #1e1e1e; color: #ccc; font-family: monospace; font-size: 13px; overflow: hidden; }
+
+    /* ── Toolbar ── */
+    #toolbar { display: flex; align-items: center; gap: 10px; padding: 6px 12px; background: #2d2d2d; border-bottom: 1px solid #444; flex-shrink: 0; flex-wrap: wrap; }
+    #toolbar label { color: #aaa; white-space: nowrap; }
+    #toolbar input[type=file] { color: #ccc; font-size: 12px; }
+    #toolbar button { background: #3a3a3a; color: #ccc; border: 1px solid #555; padding: 3px 10px; cursor: pointer; border-radius: 3px; font-family: monospace; font-size: 12px; }
+    #toolbar button:hover { background: #4a4a4a; }
+    .sep { width: 1px; height: 22px; background: #444; margin: 0 4px; }
+
+    /* ── Main area ── */
+    #main { display: flex; flex: 1; overflow: hidden; }
+
+    /* ── Animation list ── */
+    #anim-list { width: 190px; background: #252525; border-right: 1px solid #444; overflow-y: auto; flex-shrink: 0; }
+    #anim-list .anim-item {
+      padding: 5px 10px; cursor: pointer; border-bottom: 1px solid #2e2e2e;
+      border-left: 3px solid transparent; user-select: none;
+    }
+    #anim-list .anim-item:hover { background: #333; }
+    #anim-list .anim-item.selected { background: #094771; color: #fff; }
+    #anim-list .anim-item.has-origin { border-left-color: #4ec9b0; }
+
+    /* ── Canvas area ── */
+    #canvas-area {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      background: #1a1a1a; overflow: auto; position: relative;
+    }
+    #main-canvas { display: block; cursor: crosshair; image-rendering: pixelated; image-rendering: crisp-edges; }
+
+    /* ── Info panel ── */
+    #info-panel { width: 175px; background: #252525; border-left: 1px solid #444; padding: 10px; flex-shrink: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; }
+    #info-panel h3 { color: #777; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin: 8px 0 4px; }
+    #info-panel h3:first-child { margin-top: 0; }
+    .info-row { display: flex; justify-content: space-between; align-items: center; gap: 4px; }
+    .info-key { color: #888; }
+    .info-val { color: #ccc; font-size: 12px; word-break: break-all; text-align: right; }
+    input[type=number] { width: 60px; background: #333; border: 1px solid #555; color: #ccc; padding: 2px 4px; border-radius: 3px; font-family: monospace; font-size: 12px; }
+    input[type=number]:focus { outline: none; border-color: #0078d4; }
+    .clear-btn { margin-top: 8px; width: 100%; background: #3a1111; border: 1px solid #6b2020; color: #ff8080; cursor: pointer; padding: 4px; border-radius: 3px; font-family: monospace; font-size: 12px; }
+    .clear-btn:hover { background: #5a1818; }
+
+    /* ── Status bar ── */
+    #statusbar { display: flex; align-items: center; gap: 14px; padding: 5px 12px; background: #2d2d2d; border-top: 1px solid #444; font-size: 12px; flex-shrink: 0; }
+    #frame-info { color: #aaa; flex: 1; }
+    #coord-display { display: flex; gap: 10px; align-items: center; color: #4ec9b0; }
+  </style>
+</head>
+<body>
+
+<!-- ── Toolbar ── -->
+<div id="toolbar">
+  <label>Image: <input type="file" id="img-file" accept="image/*"></label>
+  <label>JSON: <input type="file" id="json-file" accept=".json"></label>
+  <div class="sep"></div>
+  <button onclick="prevFrame()" title="Hotkey: ← / A">◀ Prev</button>
+  <button onclick="nextFrame()" title="Hotkey: → / D">Next ▶</button>
+  <button id="play-btn" onclick="playPause()" title="Hotkey: Space">▶ Play</button>
+  <div class="sep"></div>
+  <label title="Hotkey: + / -">Zoom:
+    <input type="range" id="zoom-slider" min="1" max="16" value="6" oninput="setZoom(+this.value)" style="width:70px;vertical-align:middle">
+    <span id="zoom-label">6×</span>
+  </label>
+  <div class="sep"></div>
+  <button onclick="exportJSON()" style="background:#005a9e;border-color:#0068b8;color:#fff;">⬇ Export JSON</button>
+</div>
+
+<!-- ── Main layout ── -->
+<div id="main">
+
+  <!-- Animation list -->
+  <div id="anim-list">
+    <div style="padding:6px 10px;color:#666;font-size:11px;">Load a JSON to begin</div>
+  </div>
+
+  <!-- Canvas -->
+  <div id="canvas-area">
+    <canvas id="main-canvas" width="300" height="200"></canvas>
+  </div>
+
+  <!-- Info panel -->
+  <div id="info-panel">
+    <h3>Frame</h3>
+    <div id="frame-details" style="color:#666;font-size:11px;">—</div>
+
+    <h3>Origin</h3>
+    <div class="info-row">
+      <span class="info-key">ox</span>
+      <input type="number" id="origin-ox" onchange="manualSet('ox',+this.value)">
+    </div>
+    <div class="info-row">
+      <span class="info-key">oy</span>
+      <input type="number" id="origin-oy" onchange="manualSet('oy',+this.value)">
+    </div>
+
+    <button class="clear-btn" onclick="clearAnimOrigin()">✕ Clear This Animation</button>
+  </div>
+</div>
+
+<!-- ── Status bar ── -->
+<div id="statusbar">
+  <span id="frame-info">No animation selected</span>
+  <div id="coord-display">
+    <span id="origin-coords" style="color:#aaa">—</span>
+  </div>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────
+let spriteImage = null;
+let jsonData = null;
+let selectedAnim = null;
+let frameIndex = 0;
+let zoom = 6;
+let playing = false;
+let playTimer = null;
+
+const canvas = document.getElementById('main-canvas');
+const ctx = canvas.getContext('2d');
+
+// ── File loading ──────────────────────────────────────
+document.getElementById('img-file').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const url = URL.createObjectURL(file);
+  const img = new Image();
+  img.onload = () => { spriteImage = img; render(); };
+  img.src = url;
+});
+
+document.getElementById('json-file').addEventListener('change', e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = evt => {
+    try {
+      jsonData = JSON.parse(evt.target.result);
+      if (!jsonData.set_origins) jsonData.set_origins = {};
+      buildAnimList();
+      selectedAnim = null;
+      frameIndex = 0;
+      render();
+    } catch (err) {
+      alert('Invalid JSON: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+});
+
+// ── Animation list ─────────────────────────────────────
+function buildAnimList() {
+  const list = document.getElementById('anim-list');
+  list.innerHTML = '';
+  if (!jsonData || !jsonData.animations) return;
+  for (const anim of jsonData.animations) {
+    const div = document.createElement('div');
+    div.className = 'anim-item';
+    div.dataset.name = anim.name;
+    div.textContent = anim.name;
+    div.onclick = () => selectAnim(anim.name);
+    list.appendChild(div);
+  }
+  refreshListMarkers();
+}
+
+function refreshListMarkers() {
+  document.querySelectorAll('.anim-item').forEach(el => {
+    const has = !!(jsonData.set_origins && jsonData.set_origins[el.dataset.name]);
+    el.classList.toggle('has-origin', has);
+  });
+}
+
+function selectAnim(name) {
+  selectedAnim = name;
+  frameIndex = 0;
+  stopPlay();
+  document.querySelectorAll('.anim-item').forEach(el => {
+    el.classList.toggle('selected', el.dataset.name === name);
+  });
+  render();
+}
+
+// ── Frame data helper ──────────────────────────────────
+function getFrameData() {
+  if (!jsonData || !selectedAnim) return null;
+  const anim = jsonData.animations.find(a => a.name === selectedAnim);
+  if (!anim || !anim.frames.length) return null;
+  const idx = Math.max(0, frameIndex) % anim.frames.length;
+  const key = anim.frames[idx];
+  const raw = jsonData.frames[key];
+  if (!raw) return null;
+
+  // Support both {x,y,w,h} and {frame:{x,y,w,h},...} formats
+  const f = (raw.frame !== undefined) ? raw.frame : raw;
+  const so = (jsonData.set_origins && jsonData.set_origins[selectedAnim]) || null;
+
+  // Single origin: set_origins override → per-frame baked origin → default (center-bottom)
+  const origin = so ? { ...so }
+    : (raw.origin ? { ...raw.origin }
+    : { ox: Math.round(f.w / 2), oy: Math.round(f.h * 0.95) });
+
+  return { key, x: f.x, y: f.y, w: f.w, h: f.h, origin, bakedOrigin: raw.origin || null };
+}
+
+function getAnim() {
+  if (!jsonData || !selectedAnim) return null;
+  return jsonData.animations.find(a => a.name === selectedAnim) || null;
+}
+
+// ── Rendering ──────────────────────────────────────────
+function render() {
+  const fd = getFrameData();
+
+  if (!fd || !spriteImage) {
+    canvas.width = 320;
+    canvas.height = 220;
+    ctx.fillStyle = '#242424';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#555';
+    ctx.font = '13px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(
+      !spriteImage ? 'Load an image and JSON file above' : 'Select an animation from the list',
+      160, 110
+    );
+    document.getElementById('frame-info').textContent = 'No animation selected';
+    return;
+  }
+
+  const W = fd.w * zoom;
+  const H = fd.h * zoom;
+  canvas.width  = W;
+  canvas.height = H;
+
+  // Checkerboard background
+  const tileSize = Math.max(4, zoom);
+  for (let ty = 0; ty < fd.h; ty += 1) {
+    for (let tx = 0; tx < fd.w; tx += 1) {
+      ctx.fillStyle = ((tx + ty) % 2 === 0) ? '#303030' : '#262626';
+      ctx.fillRect(tx * zoom, ty * zoom, zoom, zoom);
+    }
+  }
+
+  // Draw sprite frame (pixel-crisp)
+  ctx.imageSmoothingEnabled = false;
+  ctx.drawImage(spriteImage, fd.x, fd.y, fd.w, fd.h, 0, 0, W, H);
+
+  // Marker
+  drawMarker(fd.origin.ox * zoom, fd.origin.oy * zoom, '#4ec9b0', '●');
+
+  // Status bar
+  const anim = getAnim();
+  document.getElementById('frame-info').textContent =
+    `${selectedAnim}  ·  frame ${frameIndex + 1} / ${anim.frames.length}  (${fd.key})  ·  ${fd.w}×${fd.h}px`;
+  document.getElementById('origin-coords').textContent = `origin: (${fd.origin.ox}, ${fd.origin.oy})`;
+
+  // Number inputs
+  document.getElementById('origin-ox').value = fd.origin.ox;
+  document.getElementById('origin-oy').value = fd.origin.oy;
+
+  // Frame details panel
+  document.getElementById('frame-details').innerHTML =
+    `<div class="info-row"><span class="info-key">src x</span><span class="info-val">${fd.x}</span></div>` +
+    `<div class="info-row"><span class="info-key">src y</span><span class="info-val">${fd.y}</span></div>` +
+    `<div class="info-row"><span class="info-key">size</span><span class="info-val">${fd.w}×${fd.h}</span></div>` +
+    (fd.bakedOrigin
+      ? `<div class="info-row"><span class="info-key" title="Per-frame origin baked in JSON">baked</span><span class="info-val">(${fd.bakedOrigin.ox},${fd.bakedOrigin.oy})</span></div>`
+      : '');
+}
+
+function drawMarker(px, py, color, label, alpha = 0.9) {
+  const r = Math.max(5, zoom * 1.5);
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = color;
+  ctx.fillStyle   = color;
+  ctx.lineWidth   = Math.max(1, zoom / 3);
+
+  // Crosshair
+  ctx.beginPath();
+  ctx.moveTo(px - r * 1.4, py); ctx.lineTo(px + r * 1.4, py);
+  ctx.moveTo(px, py - r * 1.4); ctx.lineTo(px, py + r * 1.4);
+  ctx.stroke();
+
+  // Circle (hollow)
+  ctx.globalAlpha = alpha * 0.5;
+  ctx.beginPath();
+  ctx.arc(px, py, r, 0, Math.PI * 2);
+  ctx.stroke();
+
+  // Label
+  if (label) {
+    ctx.globalAlpha = 1;
+    ctx.font = `bold ${Math.max(9, zoom + 1)}px monospace`;
+    ctx.textAlign = 'left';
+    ctx.fillText(label, px + r + 2, py - 2);
+  }
+  ctx.restore();
+}
+
+// ── Canvas interaction ─────────────────────────────────
+canvas.addEventListener('mousedown', handleCanvasMouse);
+canvas.addEventListener('mousemove', e => { if (e.buttons === 1) handleCanvasMouse(e); });
+
+function handleCanvasMouse(e) {
+  if (!selectedAnim || !jsonData) return;
+  const rect = canvas.getBoundingClientRect();
+  const fd   = getFrameData();
+  if (!fd) return;
+
+  // Scale from CSS display size to canvas pixels then to sprite pixels
+  const scaleX = canvas.width  / rect.width;
+  const scaleY = canvas.height / rect.height;
+  const ox = Math.round(((e.clientX - rect.left) * scaleX) / zoom);
+  const oy = Math.round(((e.clientY - rect.top)  * scaleY) / zoom);
+  const cx = Math.max(0, Math.min(fd.w, ox));
+  const cy = Math.max(0, Math.min(fd.h, oy));
+
+  if (!jsonData.set_origins) jsonData.set_origins = {};
+  jsonData.set_origins[selectedAnim] = { ox: cx, oy: cy };
+
+  refreshListMarkers();
+  render();
+}
+
+// ── Manual number input ────────────────────────────────
+function manualSet(axis, val) {
+  if (!selectedAnim || !jsonData) return;
+  if (!jsonData.set_origins) jsonData.set_origins = {};
+  if (!jsonData.set_origins[selectedAnim]) {
+    const fd = getFrameData();
+    jsonData.set_origins[selectedAnim] = fd ? { ox: fd.origin.ox, oy: fd.origin.oy } : { ox: 0, oy: 0 };
+  }
+  jsonData.set_origins[selectedAnim][axis] = val;
+  refreshListMarkers();
+  render();
+}
+
+// ── Animation controls ─────────────────────────────────
+function prevFrame() {
+  const anim = getAnim();
+  if (!anim) return;
+  stopPlay();
+  frameIndex = (frameIndex - 1 + anim.frames.length) % anim.frames.length;
+  render();
+}
+
+function nextFrame() {
+  const anim = getAnim();
+  if (!anim) return;
+  frameIndex = (frameIndex + 1) % anim.frames.length;
+  render();
+}
+
+function playPause() {
+  if (playing) { stopPlay(); return; }
+  const anim = getAnim();
+  if (!anim) return;
+  playing = true;
+  document.getElementById('play-btn').textContent = '⏸ Pause';
+  playTimer = setInterval(() => {
+    frameIndex = (frameIndex + 1) % anim.frames.length;
+    render();
+  }, 1000 / (anim.fps || 12));
+}
+
+function stopPlay() {
+  playing = false;
+  clearInterval(playTimer);
+  document.getElementById('play-btn').textContent = '▶ Play';
+}
+
+// ── Clear origin for selected animation ────────────────
+function clearAnimOrigin() {
+  if (!selectedAnim || !jsonData) return;
+  if (jsonData.set_origins) delete jsonData.set_origins[selectedAnim];
+  refreshListMarkers();
+  render();
+}
+
+// ── Zoom ───────────────────────────────────────────────
+function setZoom(z) {
+  zoom = z;
+  document.getElementById('zoom-slider').value = z;
+  document.getElementById('zoom-label').textContent = z + '×';
+  render();
+}
+
+// ── Export JSON ────────────────────────────────────────
+function exportJSON() {
+  if (!jsonData) { alert('No JSON loaded.'); return; }
+  // Remove empty set_origins entries
+  if (jsonData.set_origins) {
+    for (const k of Object.keys(jsonData.set_origins)) {
+      const v = jsonData.set_origins[k];
+      if (!v || Object.keys(v).length === 0) delete jsonData.set_origins[k];
+    }
+    if (Object.keys(jsonData.set_origins).length === 0) delete jsonData.set_origins;
+  }
+  const blob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'spritesheet.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+// ── Keyboard shortcuts ─────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') return;
+  switch (e.key) {
+    case 'ArrowLeft':  case 'a': prevFrame(); break;
+    case 'ArrowRight': case 'd': nextFrame(); break;
+    case ' ': e.preventDefault(); playPause(); break;
+    case '+': case '=': setZoom(Math.min(16, zoom + 1)); break;
+    case '-': setZoom(Math.max(1, zoom - 1)); break;
+  }
+});
+
+// ── Initial blank render ───────────────────────────────
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,1470 @@
+{
+  "meta": {
+    "size": {
+      "w": 4096,
+      "h": 4174
+    }
+  },
+  "frames": {
+    "sledgehammer_particle_000": {
+      "x": 0,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_001": {
+      "x": 222,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_002": {
+      "x": 444,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_003": {
+      "x": 666,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_004": {
+      "x": 888,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_005": {
+      "x": 1110,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_006": {
+      "x": 1332,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_007": {
+      "x": 1554,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_008": {
+      "x": 1776,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_009": {
+      "x": 1998,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_010": {
+      "x": 2220,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_011": {
+      "x": 2442,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_012": {
+      "x": 2664,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_013": {
+      "x": 2886,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_014": {
+      "x": 3108,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_015": {
+      "x": 3330,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_016": {
+      "x": 3552,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_017": {
+      "x": 3774,
+      "y": 0,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_018": {
+      "x": 0,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_019": {
+      "x": 222,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_020": {
+      "x": 444,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_021": {
+      "x": 666,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_022": {
+      "x": 888,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_023": {
+      "x": 1110,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_024": {
+      "x": 1332,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_025": {
+      "x": 1554,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_026": {
+      "x": 1776,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_027": {
+      "x": 1998,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_028": {
+      "x": 2220,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_029": {
+      "x": 2442,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_030": {
+      "x": 2664,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_031": {
+      "x": 2886,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_032": {
+      "x": 3108,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_033": {
+      "x": 3330,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_034": {
+      "x": 3552,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_035": {
+      "x": 3774,
+      "y": 185,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_036": {
+      "x": 0,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_037": {
+      "x": 222,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_038": {
+      "x": 444,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_039": {
+      "x": 666,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_040": {
+      "x": 888,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_041": {
+      "x": 1110,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_042": {
+      "x": 1332,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_043": {
+      "x": 1554,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_044": {
+      "x": 1776,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_045": {
+      "x": 1998,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_046": {
+      "x": 2220,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_047": {
+      "x": 2442,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_048": {
+      "x": 2664,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_049": {
+      "x": 2886,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_050": {
+      "x": 3108,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_051": {
+      "x": 3330,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_052": {
+      "x": 3552,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_053": {
+      "x": 3774,
+      "y": 370,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_054": {
+      "x": 0,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_055": {
+      "x": 222,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_056": {
+      "x": 444,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_057": {
+      "x": 666,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_058": {
+      "x": 888,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_059": {
+      "x": 1110,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_060": {
+      "x": 1332,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_061": {
+      "x": 1554,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_062": {
+      "x": 1776,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_063": {
+      "x": 1998,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_064": {
+      "x": 2220,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_065": {
+      "x": 2442,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_066": {
+      "x": 2664,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_067": {
+      "x": 2886,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_068": {
+      "x": 3108,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_069": {
+      "x": 3330,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_070": {
+      "x": 3552,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_071": {
+      "x": 3774,
+      "y": 555,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_072": {
+      "x": 0,
+      "y": 740,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_073": {
+      "x": 222,
+      "y": 740,
+      "w": 222,
+      "h": 185
+    },
+    "sledgehammer_particle_074": {
+      "x": 444,
+      "y": 740,
+      "w": 222,
+      "h": 185
+    },
+    "shotgun_particle_000": {
+      "x": 666,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_001": {
+      "x": 801,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_002": {
+      "x": 936,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_003": {
+      "x": 1071,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_004": {
+      "x": 1206,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_005": {
+      "x": 1341,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_006": {
+      "x": 1476,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_007": {
+      "x": 1611,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_008": {
+      "x": 1746,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_009": {
+      "x": 1881,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_010": {
+      "x": 2016,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_011": {
+      "x": 2151,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_012": {
+      "x": 2286,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_013": {
+      "x": 2421,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_014": {
+      "x": 2556,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_015": {
+      "x": 2691,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_016": {
+      "x": 2826,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_017": {
+      "x": 2961,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_018": {
+      "x": 3096,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_019": {
+      "x": 3231,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_020": {
+      "x": 3366,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "shotgun_particle_021": {
+      "x": 3501,
+      "y": 740,
+      "w": 135,
+      "h": 138
+    },
+    "glock_particle_000": {
+      "x": 3636,
+      "y": 740,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_001": {
+      "x": 3748,
+      "y": 740,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_002": {
+      "x": 3860,
+      "y": 740,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_003": {
+      "x": 3972,
+      "y": 740,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_004": {
+      "x": 0,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_005": {
+      "x": 112,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_006": {
+      "x": 224,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_007": {
+      "x": 336,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_008": {
+      "x": 448,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_009": {
+      "x": 560,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_010": {
+      "x": 672,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_011": {
+      "x": 784,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_012": {
+      "x": 896,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_013": {
+      "x": 1008,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_014": {
+      "x": 1120,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_015": {
+      "x": 1232,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_016": {
+      "x": 1344,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_017": {
+      "x": 1456,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_018": {
+      "x": 1568,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_019": {
+      "x": 1680,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "glock_particle_020": {
+      "x": 1792,
+      "y": 1129,
+      "w": 112,
+      "h": 389
+    },
+    "ak47_particle_000": {
+      "x": 1904,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_001": {
+      "x": 1952,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_002": {
+      "x": 2000,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_003": {
+      "x": 2048,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_004": {
+      "x": 2096,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_005": {
+      "x": 2144,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_006": {
+      "x": 2192,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_007": {
+      "x": 2240,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_008": {
+      "x": 2288,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_009": {
+      "x": 2336,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_010": {
+      "x": 2384,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_011": {
+      "x": 2432,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_012": {
+      "x": 2480,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_013": {
+      "x": 2528,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "ak47_particle_014": {
+      "x": 2576,
+      "y": 1129,
+      "w": 48,
+      "h": 62
+    },
+    "railgun_particle_000": {
+      "x": 2624,
+      "y": 1129,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_001": {
+      "x": 2832,
+      "y": 1129,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_002": {
+      "x": 3040,
+      "y": 1129,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_003": {
+      "x": 3248,
+      "y": 1129,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_004": {
+      "x": 3456,
+      "y": 1129,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_005": {
+      "x": 3664,
+      "y": 1129,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_006": {
+      "x": 3872,
+      "y": 1129,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_007": {
+      "x": 0,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_008": {
+      "x": 208,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_009": {
+      "x": 416,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_010": {
+      "x": 624,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_011": {
+      "x": 832,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_012": {
+      "x": 1040,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_013": {
+      "x": 1248,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_014": {
+      "x": 1456,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_015": {
+      "x": 1664,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_016": {
+      "x": 1872,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_017": {
+      "x": 2080,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_018": {
+      "x": 2288,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_019": {
+      "x": 2496,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_020": {
+      "x": 2704,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_021": {
+      "x": 2912,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_022": {
+      "x": 3120,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_023": {
+      "x": 3328,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_024": {
+      "x": 3536,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_025": {
+      "x": 3744,
+      "y": 1738,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_026": {
+      "x": 0,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_027": {
+      "x": 208,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_028": {
+      "x": 416,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_029": {
+      "x": 624,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_030": {
+      "x": 832,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_031": {
+      "x": 1040,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_032": {
+      "x": 1248,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_033": {
+      "x": 1456,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_034": {
+      "x": 1664,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_035": {
+      "x": 1872,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_036": {
+      "x": 2080,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_037": {
+      "x": 2288,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_038": {
+      "x": 2496,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_039": {
+      "x": 2704,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_040": {
+      "x": 2912,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_041": {
+      "x": 3120,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_042": {
+      "x": 3328,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_043": {
+      "x": 3536,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_044": {
+      "x": 3744,
+      "y": 2347,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_045": {
+      "x": 0,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_046": {
+      "x": 208,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_047": {
+      "x": 416,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_048": {
+      "x": 624,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_049": {
+      "x": 832,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_050": {
+      "x": 1040,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_051": {
+      "x": 1248,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_052": {
+      "x": 1456,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_053": {
+      "x": 1664,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_054": {
+      "x": 1872,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_055": {
+      "x": 2080,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_056": {
+      "x": 2288,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_057": {
+      "x": 2496,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_058": {
+      "x": 2704,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_059": {
+      "x": 2912,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_060": {
+      "x": 3120,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_061": {
+      "x": 3328,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_062": {
+      "x": 3536,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_063": {
+      "x": 3744,
+      "y": 2956,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_064": {
+      "x": 0,
+      "y": 3565,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_065": {
+      "x": 208,
+      "y": 3565,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_066": {
+      "x": 416,
+      "y": 3565,
+      "w": 208,
+      "h": 609
+    },
+    "railgun_particle_067": {
+      "x": 624,
+      "y": 3565,
+      "w": 208,
+      "h": 609
+    }
+  },
+  "animations": [
+    {
+      "name": "sledgehammer_particle",
+      "fps": 24,
+      "frames": [
+        "sledgehammer_particle_000",
+        "sledgehammer_particle_001",
+        "sledgehammer_particle_002",
+        "sledgehammer_particle_003",
+        "sledgehammer_particle_004",
+        "sledgehammer_particle_005",
+        "sledgehammer_particle_006",
+        "sledgehammer_particle_007",
+        "sledgehammer_particle_008",
+        "sledgehammer_particle_009",
+        "sledgehammer_particle_010",
+        "sledgehammer_particle_011",
+        "sledgehammer_particle_012",
+        "sledgehammer_particle_013",
+        "sledgehammer_particle_014",
+        "sledgehammer_particle_015",
+        "sledgehammer_particle_016",
+        "sledgehammer_particle_017",
+        "sledgehammer_particle_018",
+        "sledgehammer_particle_019",
+        "sledgehammer_particle_020",
+        "sledgehammer_particle_021",
+        "sledgehammer_particle_022",
+        "sledgehammer_particle_023",
+        "sledgehammer_particle_024",
+        "sledgehammer_particle_025",
+        "sledgehammer_particle_026",
+        "sledgehammer_particle_027",
+        "sledgehammer_particle_028",
+        "sledgehammer_particle_029",
+        "sledgehammer_particle_030",
+        "sledgehammer_particle_031",
+        "sledgehammer_particle_032",
+        "sledgehammer_particle_033",
+        "sledgehammer_particle_034",
+        "sledgehammer_particle_035",
+        "sledgehammer_particle_036",
+        "sledgehammer_particle_037",
+        "sledgehammer_particle_038",
+        "sledgehammer_particle_039",
+        "sledgehammer_particle_040",
+        "sledgehammer_particle_041",
+        "sledgehammer_particle_042",
+        "sledgehammer_particle_043",
+        "sledgehammer_particle_044",
+        "sledgehammer_particle_045",
+        "sledgehammer_particle_046",
+        "sledgehammer_particle_047",
+        "sledgehammer_particle_048",
+        "sledgehammer_particle_049",
+        "sledgehammer_particle_050",
+        "sledgehammer_particle_051",
+        "sledgehammer_particle_052",
+        "sledgehammer_particle_053",
+        "sledgehammer_particle_054",
+        "sledgehammer_particle_055",
+        "sledgehammer_particle_056",
+        "sledgehammer_particle_057",
+        "sledgehammer_particle_058",
+        "sledgehammer_particle_059",
+        "sledgehammer_particle_060",
+        "sledgehammer_particle_061",
+        "sledgehammer_particle_062",
+        "sledgehammer_particle_063",
+        "sledgehammer_particle_064",
+        "sledgehammer_particle_065",
+        "sledgehammer_particle_066",
+        "sledgehammer_particle_067",
+        "sledgehammer_particle_068",
+        "sledgehammer_particle_069",
+        "sledgehammer_particle_070",
+        "sledgehammer_particle_071",
+        "sledgehammer_particle_072",
+        "sledgehammer_particle_073",
+        "sledgehammer_particle_074"
+      ],
+      "offset": [
+        0,
+        -100
+      ],
+      "pinned": true
+    },
+    {
+      "name": "shotgun_particle",
+      "fps": 24,
+      "frames": [
+        "shotgun_particle_000",
+        "shotgun_particle_001",
+        "shotgun_particle_002",
+        "shotgun_particle_003",
+        "shotgun_particle_004",
+        "shotgun_particle_005",
+        "shotgun_particle_006",
+        "shotgun_particle_007",
+        "shotgun_particle_008",
+        "shotgun_particle_009",
+        "shotgun_particle_010",
+        "shotgun_particle_011",
+        "shotgun_particle_012",
+        "shotgun_particle_013",
+        "shotgun_particle_014",
+        "shotgun_particle_015",
+        "shotgun_particle_016",
+        "shotgun_particle_017",
+        "shotgun_particle_018",
+        "shotgun_particle_019",
+        "shotgun_particle_020",
+        "shotgun_particle_021"
+      ],
+      "offset": [
+        25,
+        -25
+      ]
+    },
+    {
+      "name": "glock_particle",
+      "fps": 24,
+      "frames": [
+        "glock_particle_000",
+        "glock_particle_001",
+        "glock_particle_002",
+        "glock_particle_003",
+        "glock_particle_004",
+        "glock_particle_005",
+        "glock_particle_006",
+        "glock_particle_007",
+        "glock_particle_008",
+        "glock_particle_009",
+        "glock_particle_010",
+        "glock_particle_011",
+        "glock_particle_012",
+        "glock_particle_013",
+        "glock_particle_014",
+        "glock_particle_015",
+        "glock_particle_016",
+        "glock_particle_017",
+        "glock_particle_018",
+        "glock_particle_019",
+        "glock_particle_020"
+      ],
+      "offset": [
+        37.5,
+        -225
+      ]
+    },
+    {
+      "name": "ak47_particle",
+      "fps": 24,
+      "frames": [
+        "ak47_particle_000",
+        "ak47_particle_001",
+        "ak47_particle_002",
+        "ak47_particle_003",
+        "ak47_particle_004",
+        "ak47_particle_005",
+        "ak47_particle_006",
+        "ak47_particle_007",
+        "ak47_particle_008",
+        "ak47_particle_009",
+        "ak47_particle_010",
+        "ak47_particle_011",
+        "ak47_particle_012",
+        "ak47_particle_013",
+        "ak47_particle_014"
+      ],
+      "offset": [
+        25,
+        -25
+      ]
+    },
+    {
+      "name": "railgun_particle",
+      "fps": 24,
+      "frames": [
+        "railgun_particle_000",
+        "railgun_particle_001",
+        "railgun_particle_002",
+        "railgun_particle_003",
+        "railgun_particle_004",
+        "railgun_particle_005",
+        "railgun_particle_006",
+        "railgun_particle_007",
+        "railgun_particle_008",
+        "railgun_particle_009",
+        "railgun_particle_010",
+        "railgun_particle_011",
+        "railgun_particle_012",
+        "railgun_particle_013",
+        "railgun_particle_014",
+        "railgun_particle_015",
+        "railgun_particle_016",
+        "railgun_particle_017",
+        "railgun_particle_018",
+        "railgun_particle_019",
+        "railgun_particle_020",
+        "railgun_particle_021",
+        "railgun_particle_022",
+        "railgun_particle_023",
+        "railgun_particle_024",
+        "railgun_particle_025",
+        "railgun_particle_026",
+        "railgun_particle_027",
+        "railgun_particle_028",
+        "railgun_particle_029",
+        "railgun_particle_030",
+        "railgun_particle_031",
+        "railgun_particle_032",
+        "railgun_particle_033",
+        "railgun_particle_034",
+        "railgun_particle_035",
+        "railgun_particle_036",
+        "railgun_particle_037",
+        "railgun_particle_038",
+        "railgun_particle_039",
+        "railgun_particle_040",
+        "railgun_particle_041",
+        "railgun_particle_042",
+        "railgun_particle_043",
+        "railgun_particle_044",
+        "railgun_particle_045",
+        "railgun_particle_046",
+        "railgun_particle_047",
+        "railgun_particle_048",
+        "railgun_particle_049",
+        "railgun_particle_050",
+        "railgun_particle_051",
+        "railgun_particle_052",
+        "railgun_particle_053",
+        "railgun_particle_054",
+        "railgun_particle_055",
+        "railgun_particle_056",
+        "railgun_particle_057",
+        "railgun_particle_058",
+        "railgun_particle_059",
+        "railgun_particle_060",
+        "railgun_particle_061",
+        "railgun_particle_062",
+        "railgun_particle_063",
+        "railgun_particle_064",
+        "railgun_particle_065",
+        "railgun_particle_066",
+        "railgun_particle_067"
+      ],
+      "offset": [
+        0,
+        -200
+      ]
+    }
+  ]
+}

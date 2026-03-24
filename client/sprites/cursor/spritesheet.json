@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "image": "spritesheet.png",
+    "size": {
+      "w": 212,
+      "h": 38
+    },
+    "padding": 2,
+    "bleed": 2,
+    "pot": false
+  },
+  "frames": {
+    "8703_cursor2MC_000": {
+      "x": 4,
+      "y": 4,
+      "w": 18,
+      "h": 18
+    },
+    "8706_cursor1MC_000": {
+      "x": 28,
+      "y": 4,
+      "w": 25,
+      "h": 25
+    },
+    "8718_cursor3MC_000": {
+      "x": 59,
+      "y": 4,
+      "w": 13,
+      "h": 13
+    },
+    "8720_cursor4MC_000": {
+      "x": 78,
+      "y": 4,
+      "w": 26,
+      "h": 26
+    },
+    "8723_cursor5MC_000": {
+      "x": 110,
+      "y": 4,
+      "w": 21,
+      "h": 19
+    },
+    "8725_cursor6MC_000": {
+      "x": 137,
+      "y": 4,
+      "w": 23,
+      "h": 23
+    },
+    "8727_cursor7MC_000": {
+      "x": 166,
+      "y": 4,
+      "w": 25,
+      "h": 25
+    },
+    "8731_cursor9MC_000": {
+      "x": 197,
+      "y": 4,
+      "w": 7,
+      "h": 7
+    }
+  },
+  "animations": [
+    {
+      "name": "8703_cursor2MC",
+      "fps": 12,
+      "frames": [
+        "8703_cursor2MC_000"
+      ]
+    },
+    {
+      "name": "8706_cursor1MC",
+      "fps": 12,
+      "frames": [
+        "8706_cursor1MC_000"
+      ]
+    },
+    {
+      "name": "8718_cursor3MC",
+      "fps": 12,
+      "frames": [
+        "8718_cursor3MC_000"
+      ]
+    },
+    {
+      "name": "8720_cursor4MC",
+      "fps": 12,
+      "frames": [
+        "8720_cursor4MC_000"
+      ]
+    },
+    {
+      "name": "8723_cursor5MC",
+      "fps": 12,
+      "frames": [
+        "8723_cursor5MC_000"
+      ]
+    },
+    {
+      "name": "8725_cursor6MC",
+      "fps": 12,
+      "frames": [
+        "8725_cursor6MC_000"
+      ]
+    },
+    {
+      "name": "8727_cursor7MC",
+      "fps": 12,
+      "frames": [
+        "8727_cursor7MC_000"
+      ]
+    },
+    {
+      "name": "8731_cursor9MC",
+      "fps": 12,
+      "frames": [
+        "8731_cursor9MC_000"
+      ]
+    }
+  ]
+}

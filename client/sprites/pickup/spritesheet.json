@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "image": "spritesheet.png",
+    "size": {
+      "w": 804,
+      "h": 97
+    },
+    "padding": 2,
+    "bleed": 2,
+    "pot": false
+  },
+  "frames": {
+    "katana_pickup_000": {
+      "x": 4,
+      "y": 4,
+      "w": 73,
+      "h": 50
+    },
+    "sledgehammer_pickup_000": {
+      "x": 83,
+      "y": 4,
+      "w": 62,
+      "h": 50
+    },
+    "shotgun_pickup_000": {
+      "x": 151,
+      "y": 4,
+      "w": 70,
+      "h": 50
+    },
+    "glock_pickup_000": {
+      "x": 227,
+      "y": 4,
+      "w": 50,
+      "h": 50
+    },
+    "bat_pickup_000": {
+      "x": 283,
+      "y": 4,
+      "w": 55,
+      "h": 50
+    },
+    "ak47_pickup_000": {
+      "x": 344,
+      "y": 4,
+      "w": 55,
+      "h": 50
+    },
+    "chaingun_pickup_000": {
+      "x": 405,
+      "y": 4,
+      "w": 50,
+      "h": 85
+    },
+    "chainsaw_pickup_000": {
+      "x": 461,
+      "y": 4,
+      "w": 72,
+      "h": 57
+    },
+    "flamethrower_pickup_000": {
+      "x": 539,
+      "y": 4,
+      "w": 67,
+      "h": 63
+    },
+    "laser_sword_pickup_000": {
+      "x": 612,
+      "y": 4,
+      "w": 72,
+      "h": 53
+    },
+    "railgun_pickup_000": {
+      "x": 690,
+      "y": 4,
+      "w": 50,
+      "h": 73
+    },
+    "tesla_helmet_pickup_000": {
+      "x": 752,
+      "y": 4,
+      "w": 52,
+      "h": 46
+    }
+  },
+  "animations": [
+    {
+      "name": "katana_pickup",
+      "fps": 12,
+      "frames": [
+        "katana_pickup_000"
+      ]
+    },
+    {
+      "name": "sledgehammer_pickup",
+      "fps": 12,
+      "frames": [
+        "sledgehammer_pickup_000"
+      ]
+    },
+    {
+      "name": "shotgun_pickup",
+      "fps": 12,
+      "frames": [
+        "shotgun_pickup_000"
+      ]
+    },
+    {
+      "name": "glock_pickup",
+      "fps": 12,
+      "frames": [
+        "glock_pickup_000"
+      ]
+    },
+    {
+      "name": "bat_pickup",
+      "fps": 12,
+      "frames": [
+        "bat_pickup_000"
+      ]
+    },
+    {
+      "name": "ak47_pickup",
+      "fps": 12,
+      "frames": [
+        "ak47_pickup_000"
+      ]
+    },
+    {
+      "name": "chaingun_pickup",
+      "fps": 12,
+      "frames": [
+        "chaingun_pickup_000"
+      ]
+    },
+    {
+      "name": "chainsaw_pickup",
+      "fps": 12,
+      "frames": [
+        "chainsaw_pickup_000"
+      ]
+    },
+    {
+      "name": "flamethrower_pickup",
+      "fps": 12,
+      "frames": [
+        "flamethrower_pickup_000"
+      ]
+    },
+    {
+      "name": "laser_sword_pickup",
+      "fps": 12,
+      "frames": [
+        "laser_sword_pickup_000"
+      ]
+    },
+    {
+      "name": "railgun_pickup",
+      "fps": 12,
+      "frames": [
+        "railgun_pickup_000"
+      ]
+    },
+    {
+      "name": "tesla_helmet_pickup",
+      "fps": 12,
+      "frames": [
+        "tesla_helmet_pickup_000"
+      ]
+    }
+  ]
+}
