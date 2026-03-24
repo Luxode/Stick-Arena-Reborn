@@ -23,16 +23,16 @@ class BotManager {
 
   // Maps known to play nicely for solo-vs-bots.
   static OFFLINE_MAPS = [
-    '__anarchystreets.dat',
-    '__battlegroundbase.dat',
-    '__brawlersburrow.dat',
-    '__cliffs.dat',
-    '__concretejungle.dat',
-    '__cubicles.dat',
-    '__facility.dat',
-    '__officespace.dat',
-    '__thepit.dat',
-    '__barge.dat',
+    'anarchystreets.dat',
+    'battlegroundbase.dat',
+    'brawlersburrow.dat',
+    'cliffs.dat',
+    'concretejungle.dat',
+    'cubicles.dat',
+    'facility.dat',
+    'officespace.dat',
+    'thepit.dat',
+    'barge.dat',
   ];
 
   static getInstance() {

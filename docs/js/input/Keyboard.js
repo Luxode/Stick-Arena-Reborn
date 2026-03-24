@@ -17,39 +17,39 @@ function keyMatches(event, action) {
 
 // Map name to .dat filename mapping
 const MAP_NAMES = {
-  'unstableterrace': '__unstableterrace.dat',
-  'ballistick': '__ballistick.dat',
-  'desertlaboratory': '__desertlaboratory.dat',
-  'elitebase': '__elitebase.dat',
-  'exploration': '__exploration.dat',
-  'facility': '__facility.dat',
-  'failcorp': '__failcorp.dat',
-  'floorthirteen': '__floorthirteen.dat',
-  'fortmoon': '__fortmoon.dat',
-  'futureoffice': '__futureoffice.dat',
-  'geminicontrolstation': '__geminicontrolstation.dat',
-  'globalmegacorpltd': '__globalmegacorpltd.dat',
-  'greenlabyrinth': '__greenlabyrinth.dat',
-  'industrialdrainage': '__industrialdrainage.dat',
-  'islandhopping': '__islandhopping.dat',
-  'islandsofanarchy': '__islandsofanarchy.dat',
-  'cubicles': '__cubicles.dat',
-  'concretejungle': '__concretejungle.dat',
-  'cruelity': '__cruelity.dat',
-  'dday': '__dday.dat',
-  'deadspace': '__deadspace.dat',
-  'debug': '__debug.dat',
-  'sewertunnel': '__sewertunnel.dat',
-  'sewagetreatment': '__sewagetreatment.dat',
-  'automateddiscoverypod': '__automateddiscoverypod.dat',
-  'anarchystreets': '__anarchystreets.dat',
-  'alientestlab': '__alientestlab.dat',
-  'abandonedcity': '__abandonedcity.dat',
-  'battlegroundbase': '__battlegroundbase.dat',
-  'barge': '__barge.dat',
-  'outpost': '__outpost.dat',
-  'parisstreets': '__parisstreets.dat',
-  'radiation': '__radiation.dat',
+  'unstableterrace': 'unstableterrace.dat',
+  'ballistick': 'ballistick.dat',
+  'desertlaboratory': 'desertlaboratory.dat',
+  'elitebase': 'elitebase.dat',
+  'exploration': 'exploration.dat',
+  'facility': 'facility.dat',
+  'failcorp': 'failcorp.dat',
+  'floorthirteen': 'floorthirteen.dat',
+  'fortmoon': 'fortmoon.dat',
+  'futureoffice': 'futureoffice.dat',
+  'geminicontrolstation': 'geminicontrolstation.dat',
+  'globalmegacorpltd': 'globalmegacorpltd.dat',
+  'greenlabyrinth': 'greenlabyrinth.dat',
+  'industrialdrainage': 'industrialdrainage.dat',
+  'islandhopping': 'islandhopping.dat',
+  'islandsofanarchy': 'islandsofanarchy.dat',
+  'cubicles': 'cubicles.dat',
+  'concretejungle': 'concretejungle.dat',
+  'cruelity': 'cruelity.dat',
+  'dday': 'dday.dat',
+  'deadspace': 'deadspace.dat',
+  'debug': 'debug.dat',
+  'sewertunnel': 'sewertunnel.dat',
+  'sewagetreatment': 'sewagetreatment.dat',
+  'automateddiscoverypod': 'automateddiscoverypod.dat',
+  'anarchystreets': 'anarchystreets.dat',
+  'alientestlab': 'alientestlab.dat',
+  'abandonedcity': 'abandonedcity.dat',
+  'battlegroundbase': 'battlegroundbase.dat',
+  'barge': 'barge.dat',
+  'outpost': 'outpost.dat',
+  'parisstreets': 'parisstreets.dat',
+  'radiation': 'radiation.dat',
 };
 
 function keyDownHandler(event) {
@@ -65,7 +65,7 @@ function keyDownHandler(event) {
         if (mapFile) {
           // Use the global loadMap function to properly reinitialize everything
           if (typeof loadMap !== 'undefined') {
-            // Pass the full filename (e.g., '__barge.dat') to loadMap
+            // Pass the full filename (e.g., 'barge.dat') to loadMap
             loadMap(mapFile);
             console.log(`[Map] Loading ${mapName}...`);
           } else {

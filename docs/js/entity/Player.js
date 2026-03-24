@@ -273,7 +273,6 @@ class Player {
     const { x, y } = pts[Math.floor(Math.random() * pts.length)];
 
     this.body.setPosition(x, y);
-    soundManager.play('spawn');
 
     socketManager.emit("playerRespawn", { position: { x, y } });
   }
@@ -295,7 +294,6 @@ class Player {
 
     if (this.isMainPlayer) {
       this.healthbarHeart.setAnimation('heartbeat_healthy');
-      soundManager.play('spawn');
       socketManager.emit("playerRespawn", { position: { x, y } });
     }
   }

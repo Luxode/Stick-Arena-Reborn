@@ -7,7 +7,7 @@ const io = require("socket.io")(server);
 
 const Player = require("./server/models/Player");
 
-// Convert a map filename like '__anarchystreets.dat' to 'Anarchystreets'.
+// Convert a map filename like 'anarchystreets.dat' to 'Anarchystreets'.
 function mapDisplayName(filename) {
   return filename.replace(/^_+/, '').replace(/\.dat$/i, '')
     .replace(/^./, c => c.toUpperCase());
@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 // Toggle debug map via the !debugmap admin command in chat.
 let debugMapEnabled = false;
-const DEBUG_MAP_FILE = '__debug.dat';
+const DEBUG_MAP_FILE = 'debug.dat';
 
 // Discover all available maps at startup.
 const mapsDir = path.join(__dirname, "docs/data/maps");
@@ -303,7 +303,7 @@ io.on("connection", (socket) => {
 
         if (cmd === '!debugmap') {
           debugMapEnabled = !debugMapEnabled;
-          socket.emit('chatMessage', { name: 'Server', text: `Debug map ${debugMapEnabled ? 'ON (__debug.dat)' : 'OFF (random maps)'} — starting new round...` });
+          socket.emit('chatMessage', { name: 'Server', text: `Debug map ${debugMapEnabled ? 'ON (debug.dat)' : 'OFF (random maps)'} — starting new round...` });
           if (roundEndTimeout) clearTimeout(roundEndTimeout);
           game.phase = 'roundEnd';
           io.emit('roundEnd', { scores: getScores() });
