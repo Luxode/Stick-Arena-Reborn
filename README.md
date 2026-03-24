@@ -1,5 +1,8 @@
 # Stick Arena: Reborn
 
+[**Live demo where you can play against bots**](https://luxode.github.io/Stick-Arena-Reborn/)
+
+
 A modern, open-source **HTML5 reimplementation** of the Flash game [Stick Arena](https://www.xgenstudios.com/play/stickarena) by XGenStudios.
 
 ![gameplay](./gameplay.gif)
