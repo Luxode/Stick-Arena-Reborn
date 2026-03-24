@@ -13,10 +13,10 @@ function mapDisplayName(filename) {
     .replace(/^./, c => c.toUpperCase());
 }
 
-app.use(express.static(path.join(__dirname, "client")));
+app.use(express.static(path.join(__dirname, "docs")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "docs/index.html"));
 });
 
 // Toggle debug map via the !debugmap admin command in chat.
@@ -24,7 +24,7 @@ let debugMapEnabled = false;
 const DEBUG_MAP_FILE = '__debug.dat';
 
 // Discover all available maps at startup.
-const mapsDir = path.join(__dirname, "client/data/maps");
+const mapsDir = path.join(__dirname, "docs/data/maps");
 const mapFiles = fs.readdirSync(mapsDir).filter(f => f.endsWith(".dat"));
 
 function pickMap() {
