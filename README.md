@@ -2,6 +2,8 @@
 
 A modern, open-source **HTML5 reimplementation** of the Flash game [Stick Arena](https://www.xgenstudios.com/play/stickarena) by XGenStudios.
 
+![gameplay](./gameplay.gif)
+
 ## Backstory
 
 Stick Arena was a popular browser-based multiplayer shooter that ran for over a decade on XGenStudios' servers. When Adobe Flash was discontinued at the end of 2020, the game became effectively unplayable — the official servers eventually went offline, and today it can only be accessed through a Flash emulator paired with a private server.
