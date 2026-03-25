@@ -1,0 +1,10 @@
+# tools are build scripts only, not app code
+tools/** linguist-vendored=true
+tools/**/*.py linguist-vendored=true
+
+# optionally catch any fallback .py
+*.py linguist-language=Text
+
+# keep docs content in language stats (including JS/HTML under docs/)
+/docs/** linguist-vendored=false
+/docs/** linguist-language=JavaScript
