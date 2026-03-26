@@ -59,6 +59,15 @@ function keyDownHandler(event) {
       const text = chatManager.close();
       if (text === '!debug') {
         debugTiles = !debugTiles;
+      } else if (text === '!next') {
+        if (botManager.active) {
+          // load new random map
+          const allMaps = BotManager.OFFLINE_MAPS;
+          const file = allMaps[Math.floor(Math.random() * allMaps.length)];
+          loadMap(file);
+        } else {
+          socketManager.emit('chatMessage', { text });
+        }
       } else if (text.startsWith('!map ')) {
         const mapName = text.substring(5).trim().toLowerCase();
         const mapFile = MAP_NAMES[mapName];
